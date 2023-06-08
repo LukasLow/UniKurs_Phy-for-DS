@@ -2,3 +2,4 @@ ParticlePhysics/signal_training.txt
 ParticlePhysics/signal_testing.txt
 ParticlePhysics/background_training.txt
 ParticlePhysics/background_testing.txt
+.DS_Store
