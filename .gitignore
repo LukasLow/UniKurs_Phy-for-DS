@@ -4,3 +4,4 @@ ParticlePhysics/background_training.txt
 ParticlePhysics/background_testing.txt
 .DS_Store
 TFM_Example
+*.npy
