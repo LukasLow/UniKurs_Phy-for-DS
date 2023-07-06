@@ -1,3 +1,3 @@
-Average cos(theta) = nan ± nan
-Average u_i.u_(i+Delta_i) = nan ± nan
-Average R_EE^2 = nan ± nan
+Average cos(theta) = 0.03672566159921997 ± 0.6619296983270861
+Average u_i.u_(i+Delta_i) = 0.037842482566920216 ± 0.6611520828146047
+Average R_EE^2 = 2.001845998484991 ± 1.162012680817827
