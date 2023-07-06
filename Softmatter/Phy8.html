@@ -15256,7 +15256,7 @@ where $\theta$ denotes the angle between $\mathbf{u}_i$ and $\mathbf{u}_{i-1}$ (
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>%%bash
-/root/vsc_projects/PhyforDS/UniKurs_Phy-for-DS/Softmatter/sgh.sh
+./sgh.sh
 </pre></div>
 
      </div>
@@ -15276,8 +15276,12 @@ where $\theta$ denotes the angle between $\mathbf{u}_i$ and $\mathbf{u}_{i-1}$ (
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[master e561de5] Automated commit - 2023-07-06 00:37:43
- 1 file changed, 18 insertions(+), 1 deletion(-)
+<pre>Current time: 2023-07-06 07:37:54
+/home/jovyan/work/Softmatter
+[master ed63c56] Automated commit - 2023-07-06 07:37:54
+ 3 files changed, 1345 insertions(+), 75 deletions(-)
+ create mode 100755 Softmatter/.ipynb_checkpoints/Phy8-checkpoint.ipynb
+ create mode 100755 Softmatter/.ipynb_checkpoints/script-checkpoint.py
 </pre>
 </div>
 </div>
@@ -15288,62 +15292,7 @@ where $\theta$ denotes the angle between $\mathbf{u}_i$ and $\mathbf{u}_{i-1}$ (
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>To https://github.com/LukasLow/UniKurs_Phy-for-DS.git
-   8c9dbd7..e561de5  master -&gt; master
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[master da7e941] Automated commit - 2023-07-06 00:42:29
- 1 file changed, 4 insertions(+), 44 deletions(-)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>To https://github.com/LukasLow/UniKurs_Phy-for-DS.git
-   e561de5..da7e941  master -&gt; master
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Commit made at 2023-07-06 00:42:29
-[master 09ffd33] Automated commit - 2023-07-06 00:47:30
- 1 file changed, 32 insertions(+), 10 deletions(-)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>To https://github.com/LukasLow/UniKurs_Phy-for-DS.git
-   da7e941..09ffd33  master -&gt; master
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Commit made at 2023-07-06 00:47:30
+   fabe82b..ed63c56  master -&gt; master
 </pre>
 </div>
 </div>
@@ -15423,70 +15372,55 @@ where $\theta$ denotes the angle between $\mathbf{u}_i$ and $\mathbf{u}_{i-1}$ (
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>  0%|          | 0/1048576 [00:00&lt;?, ?it/s]/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+<pre>  0%|          | 0/1048576 [00:00&lt;?, ?it/s]/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:20: RuntimeWarning: invalid value encountered in log
+/tmp/ipykernel_16343/3146130991.py:20: RuntimeWarning: invalid value encountered in log
   cos_theta = np.log(1 - xi * np.sinh(epsilon_0)) / epsilon_0
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+  0%|          | 102/1048576 [00:00&lt;17:12, 1015.74it/s]/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-/tmp/ipykernel_28425/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
+/tmp/ipykernel_16343/3146130991.py:21: RuntimeWarning: invalid value encountered in arccos
   theta = np.arccos(cos_theta)
-100%|██████████| 1048576/1048576 [16:17&lt;00:00, 1073.12it/s]</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[[ 0.53765663 -0.74888227  0.38742832]
- [        nan         nan         nan]
- [-0.72537681 -0.67956803 -0.10961654]
- ...
- [        nan         nan         nan]
- [        nan         nan         nan]
- [        nan         nan         nan]]
+100%|██████████| 1048576/1048576 [16:15&lt;00:00, 1075.26it/s]
 </pre>
 </div>
 </div>
@@ -15495,8 +15429,14 @@ where $\theta$ denotes the angle between $\mathbf{u}_i$ and $\mathbf{u}_{i-1}$ (
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[[0.19270892 0.82994097 0.5235086 ]
+ [       nan        nan        nan]
+ [       nan        nan        nan]
+ ...
+ [       nan        nan        nan]
+ [       nan        nan        nan]
+ [       nan        nan        nan]]
 </pre>
 </div>
 </div>
@@ -15532,6 +15472,73 @@ where $\theta$ denotes the angle between $\mathbf{u}_i$ and $\mathbf{u}_{i-1}$ (
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Save configurations to a file</span>
 <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;molecular_configurations.npy&quot;</span>
+<span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">configurations</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Saved </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">configurations</span><span class="p">)</span><span class="si">}</span><span class="s2"> configurations to </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
+<span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
+
+<span class="k">def</span> <span class="nf">generate_configuration</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+    <span class="c1"># Initialize chain</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">N</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">N</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+
+    <span class="c1"># Generate u_1 uniformly distributed on a sphere</span>
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">phi</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+    <span class="n">u</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
+                     <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
+                     <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)])</span>
+
+    <span class="c1"># Generate subsequent bonds</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">xi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+        <span class="n">cos_theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">xi</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sinh</span><span class="p">(</span><span class="n">epsilon_0</span><span class="p">))</span> <span class="o">/</span> <span class="n">epsilon_0</span>
+        <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arccos</span><span class="p">(</span><span class="n">cos_theta</span><span class="p">)</span>
+        <span class="n">phi</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
+        <span class="n">u_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
+                        <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">),</span>
+                        <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)])</span>
+        <span class="n">u</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">u_i</span>
+
+    <span class="c1"># Add last unit vector</span>
+    <span class="n">u</span><span class="p">[</span><span class="n">N</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="n">u</span><span class="p">[</span><span class="n">N</span><span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">u</span>
+
+
+<span class="c1"># Parameters</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">512</span>
+<span class="n">epsilon_0</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">sample_size</span> <span class="o">=</span> <span class="mi">1048576</span>
+
+<span class="c1"># Generate molecular configurations in parallel with progress bar</span>
+<span class="k">with</span> <span class="n">Pool</span><span class="p">()</span> <span class="k">as</span> <span class="n">p</span><span class="p">,</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">total</span><span class="o">=</span><span class="n">sample_size</span><span class="p">)</span> <span class="k">as</span> <span class="n">pbar</span><span class="p">:</span>
+    <span class="n">configurations</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">config</span> <span class="ow">in</span> <span class="n">p</span><span class="o">.</span><span class="n">imap_unordered</span><span class="p">(</span><span class="n">generate_configuration</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="n">sample_size</span><span class="p">)):</span>
+        <span class="n">configurations</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
+        <span class="n">pbar</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Access individual configurations</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">configurations</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Example: Print the first configuration</span>
+
+<span class="c1"># Save configurations to a file</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;molecular_configurations_fix?.npy&quot;</span>
 <span class="n">np</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">configurations</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Saved </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">configurations</span><span class="p">)</span><span class="si">}</span><span class="s2"> configurations to </span><span class="si">{</span><span class="n">filename</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
 </pre></div>
@@ -15759,7 +15766,7 @@ where $L=(N-1) l_0$ denotes the contour length of the chain molecules.</li>
 </div>
 </div>
 </div>
-</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15772,6 +15779,8 @@ where $L=(N-1) l_0$ denotes the contour length of the chain molecules.</li>
 <span class="kn">from</span> <span class="nn">multiprocessing</span> <span class="kn">import</span> <span class="n">Pool</span>
 <span class="kn">from</span> <span class="nn">tqdm</span> <span class="kn">import</span> <span class="n">tqdm</span>
 <span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="kn">import</span> <span class="n">resample</span>
+
+<span class="n">configurations</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;molecular_configurations.npy&quot;</span><span class="p">)</span>
 
 <span class="k">def</span> <span class="nf">calculate_averages</span><span class="p">(</span><span class="n">configurations</span><span class="p">):</span>
     <span class="n">num_configurations</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">configurations</span><span class="p">)</span>
@@ -15811,7 +15820,7 @@ where $L=(N-1) l_0$ denotes the contour length of the chain molecules.</li>
 <span class="n">average_cos_theta</span><span class="p">,</span> <span class="n">cos_theta_err</span><span class="p">,</span> <span class="n">average_u_dot_u_delta</span><span class="p">,</span> <span class="n">u_dot_u_delta_err</span><span class="p">,</span> <span class="n">average_R_EE_square</span><span class="p">,</span> <span class="n">R_EE_square_err</span> <span class="o">=</span> <span class="n">calculate_averages</span><span class="p">(</span><span class="n">configurations</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average cos(theta) = </span><span class="si">{</span><span class="n">average_cos_theta</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">cos_theta_err</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average u_i.u_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="n">Delta_i</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">average_u_dot_u_delta</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">u_dot_u_delta_err</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average u_i.u_(i+Delta_i) = </span><span class="si">{</span><span class="n">average_u_dot_u_delta</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">u_dot_u_delta_err</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average R_EE^2 = </span><span class="si">{</span><span class="n">average_R_EE_square</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">R_EE_square_err</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
 
@@ -15821,7 +15830,7 @@ where $L=(N-1) l_0$ denotes the contour length of the chain molecules.</li>
 <span class="c1"># Save results to a text file</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;averages_and_errors.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average cos(theta) = </span><span class="si">{</span><span class="n">average_cos_theta</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">cos_theta_err</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average u_i.u_</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="n">Delta_i</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">average_u_dot_u_delta</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">u_dot_u_delta_err</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average u_i.u_(i+Delta_i) = </span><span class="si">{</span><span class="n">average_u_dot_u_delta</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">u_dot_u_delta_err</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Average R_EE^2 = </span><span class="si">{</span><span class="n">average_R_EE_square</span><span class="si">}</span><span class="s2"> ± </span><span class="si">{</span><span class="n">R_EE_square_err</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Averages and errors have been saved to &#39;averages_and_errors.txt&#39;&quot;</span><span class="p">)</span>
@@ -15830,6 +15839,30 @@ where $L=(N-1) l_0$ denotes the contour length of the chain molecules.</li>
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Average cos(theta) = nan ± nan
+Average u_i.u_(i+Delta_i) = nan ± nan
+Average R_EE^2 = nan ± nan
+Averages and errors have been saved to &#39;averages_and_errors.txt&#39;
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div  class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
