@@ -5,3 +5,5 @@ ParticlePhysics/background_testing.txt
 .DS_Store
 TFM_Example
 *.npy
+*.sh
+Softmatter/savegh.sh
