@@ -1,0 +1,3 @@
+Average cos(theta) = nan ± nan
+Average u_i.u_(i+Delta_i) = nan ± nan
+Average R_EE^2 = nan ± nan
