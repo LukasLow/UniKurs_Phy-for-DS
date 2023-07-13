@@ -7,3 +7,4 @@ TFM_Example
 *.npy
 *.sh
 Softmatter/savegh.sh
+.conda
